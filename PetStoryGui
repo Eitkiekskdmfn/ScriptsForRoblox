@@ -1,0 +1,1102 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Pet Story Gui v1.1 | Made by red_Jeff", "GrapeTheme")
+
+local Tab = Window:NewTab("Misc")
+local MiscSection = Tab:NewSection("Misc")
+MiscSection:NewButton("Generate Treats (InGame)", "Continues To Generate Treats until you leave the game.", function()
+	while true do
+
+		local event = game:GetService("ReplicatedStorage").Remotes.TreatTouched
+
+		event:FireServer()
+		wait(0)
+	end
+	print("Clicked")
+end)
+
+MiscSection:NewButton("AutoHeal", "Heals you automatically when you are low on health.", function()
+	while true do
+
+		local v1 = 10
+		local event = game:GetService("ReplicatedStorage").Remotes.HealEvent
+
+		event:FireServer(v1)
+		wait(0.3)
+	end
+	print("Clicked")
+end)
+
+MiscSection:NewButton("Give 500 million treats (Use in lobby only)", "Gives you 500 million treats and more if you click.", function()
+	local v1 = 999999999
+	local event = game:GetService("ReplicatedStorage").Remotes.ReturnMoney
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+local Tab = Window:NewTab("Hats")
+local HatsSection = Tab:NewSection("Hats (Yes they save even after you leave.)")
+HatsSection:NewButton("Christmas Hat", "Gives you the Christmas Hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Christmas Hat"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Lion Fur", "Gives you the Lion Fur hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Lion Fur"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Green Antennas", "Gives you the Green Antennas hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Green Antennas"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Bunny Ears", "Gives you the Bunny Ears hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Bunny Ears"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Birthday Hat", "Gives you the Birthday Hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Birthday Hat"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Earphones", "Gives you the Earphones hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Earphones"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("King Crown", "Gives you the King Crown hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["King Crown"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Princess Tiara", "Gives you the Princess Tiara hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Princess Tiara"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Viking Helmet", "Gives you the Viking Helmet hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Viking Helmet"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Deal With It", "Gives you the Deal With It hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Deal With It"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Unicorn Horn", "Gives you the Unicorn Horn hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Unicorn Horn"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Flower Crown", "Gives you the Flower Crown hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Flower Crown"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Sombrero", "Gives you the Sombrero hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Sombrero"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Top Hat", "Gives you the Top Hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Top Hat"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Snow Hat", "Gives you the Snow Hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Snow Hat"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Sunflower", "Gives you the Sunflower Hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Sunflower"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Pirate Hat", "Gives you the Pirate Hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Pirate Hat"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Pink Bow", "Gives you the Pink Bow hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Pink Bow"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Banana Peel", "Gives you the Banana Peel hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Banana Peel"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Propeller Hat", "Gives you the Propeller Hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Propeller Hat"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Newspaper Boat", "Gives you the Newspaper Boat Hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Newspaper Boat"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("SUS", "Gives you the SUS hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["SUS"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Pigeon Pal", "Gives you the Pigeon Pal hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Pigeon Pal"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Oof", "Gives you the Oof hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Oof"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Traffic Cone", "Gives you the Traffic Cone hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Traffic Cone"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Gold Sparkles", "Gives you the Gold Sparkles hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Gold Sparkles"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Balloon Head", "Gives you the Balloon Head hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Balloon Head"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Hero Mask", "Gives you the Hero Mask hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Hero Mask"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Hearts", "Gives you the Hearts hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Hearts"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Little Devil", "Gives you the Little Devil hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Little Devil"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Dark Googles", "Gives you the Dark Googles hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Dark Googles"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Chef Hat", "Gives you the Chef Hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Chef Hat"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Ice Cream", "Gives you the Ice Cream hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Ice Cream"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Police Hat", "Gives you the Police Hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Police Hat"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Strawberry Ears", "Gives you the Strawberry Ears hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Strawberry Ears"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Backwards Cap", "Gives you the Backwards Cap hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Backwards Cap"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Cowboy Hat", "Gives you the Cowboy Hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Cowboy Hat"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Heartified", "Gives you the Heartified glasses", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Heartified"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Heart Antennas", "Gives you the Heart Antennas hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Heart Antennas"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Chocolate Box", "Gives you the Chocolate Box hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Chocolate Box"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Cat Ears", "Gives you the Cat Ears hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Cat Ears"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Builder Hat", "Gives you the Builder Hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Builder Hat"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Purple Shell", "Gives you the Purple Shell hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Purple Shell"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Evil Halo", "Gives you the Evil Halo hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Evil Halo"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Rainbow Fedora", "Gives you the Rainbow Fedora hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Rainbow Fedora"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Disco Hat", "Gives you the Disco Hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Disco Hat"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Ninja Hat", "Gives you the Ninja Hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Ninja Hat"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Football", "Gives you the Football hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Football"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Dance Sign", "Gives you the Dance Sign hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Dance Sign"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("100 Million Visits", "Gives you the 100 Million Visits hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["100 Million Visits"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Head Wings", "Gives you the Head Wings hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Head Wings"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Colorful Feather", "Gives you the Colorful Feather hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Colorful Feather"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Pink Drink Ears", "Gives you the Pink Drink Ears", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Pink Drink Ears"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Popcorn", "Gives you the Popcorn hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Popcorn"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Zoo Headband", "Gives you the Zoo Headband hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Zoo Headband"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("King of the Zoo", "Gives you the King of the Zoo hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["King of the Zoo"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Beehive", "Gives you the Beehive hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Beehive"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Straw Hat", "Gives you the Straw Hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Straw Hat"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Fish Bucket", "Gives you the Fish Bucket hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Fish Bucket"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Broken Egg", "Gives you the Broken Egg hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Broken Egg"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+HatsSection:NewButton("Rainbow Hat", "Gives you the Rainbow Hat", function()
+	local v1 = game:GetService("ReplicatedStorage").Hats["Rainbow Hat"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+local Tab = Window:NewTab("Skins")
+local SkinsSection = Tab:NewSection("Skins (yes it saves even after you leave the game)")
+SkinsSection:NewButton("Charlie", "Gives you the Charlie skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Charlie
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Canela", "Gives you the Canela skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Canela
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Misty", "Gives you the Misty skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Misty
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Paco", "Gives you the Paco skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Paco
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Walter", "Gives you the Walter skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Walter
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Yorkie", "Gives you the Yorkie skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Yorkie
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Hotdog", "Gives you the Hotdog skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Hotdog
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Slicer", "Gives you the Slicer skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Slicer
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Bob", "Gives you the Bob skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Bob
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Pigeon", "Gives you the Pigeon skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Pigeon
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Twittie", "Gives you the Twittie skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Twittie
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Oreo", "Gives you the Oreo skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Oreo
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Chihuahua", "Gives you the Chihuahua skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Chihuahua
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Lana", "Gives you the lana skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Lana
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Sr. Puffers", "Gives you the Sr. Puffers skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins["Sr. Puffers"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Pommy", "Gives you the Pommy skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Pommy
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Teddie", "Gives you the Teddie skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Teddie
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Huskers", "Gives you the Huskers skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Huskers
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Neon Slicer", "Gives you the Neon Slicer skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins["Neon Slicer"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Rambo", "Gives you the Rambo skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Rambo
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Bernie", "Gives you the Bernie skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Bernie
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Rudolph", "Gives you the Rudolph skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Rudolph
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Polo", "Gives you the Polo skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Polo
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Snowie", "Gives you the Snowie skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Snowie
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Dalma", "Gives you the Dalma skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Dalma
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Axoloty", "Gives you the Axoloty skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Axoloty
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Pog", "Gives you the Pog skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Pog
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Panda", "Gives you the Panda skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Panda
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Rhino", "Gives you the Rhino skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Rhino
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Macaw", "Gives you the Macaw skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Macaw
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Pitbull", "Gives you the Pitbull skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Pitbull
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Forest", "Gives you the Forest skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Forest
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Artic", "Gives you the Artic skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Artic
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Obi", "Gives you the Obi skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Obi
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Ash", "Gives you the Ash skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Ash
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Shellie", "Gives you the Shellie skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Shellie
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Alpha", "Gives you the Alpha skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Alpha
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Roboslicer", "Gives you the Roboslicer skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Roboslicer
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Pannie", "Gives you the Pannie skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Pannie
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Fang", "Gives you the Fang skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Fang
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Mofusa", "Gives you the Mofusa skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Mofusa
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Puma", "Gives you the Puma skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Puma
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Leonard", "Gives you the Leonard skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Leonard
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Tigo", "Gives you the Tigo skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Tigo
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Poodly", "Gives you the Poodly skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Poodly
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Rocky", "Gives you the Rocky skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Rocky
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Luffie", "Gives you the Luffie skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Luffie
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Cotton", "Gives you the Cotton skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Cotton
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Croc", "Gives you the Croc skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Croc
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Coon", "Gives you the Coon skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Coon
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Spike", "Gives you the Spike skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Spike
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Shibo", "Gives you the Shibo skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Shibo
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Pokey", "Gives you the Pokey skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Pokey
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Rainbow Chamaly", "Gives you the Rainbow Chamaly skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins["Rainbow Chamaly"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Pinklet", "Gives you the Pinklet skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Pinklet
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Red Chamaly", "Gives you the Red Chamaly skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins["Red Chamaly"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Kallie", "Gives you the Kallie skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Kallie
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Green Chamaly", "Gives you the Green Chamaly skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins["Green Chamaly"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Cowlette", "Gives you the Cowlette skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Cowlette
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Human", "Gives you the Human skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Human
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Girry", "Gives you the Girry skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Girry
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("White Monkey", "Gives you the White Monkey skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins["White Monkey"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Platypus", "Gives you the Platypus skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Platypus
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Monkey", "Gives you the Monkey skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Monkey
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Hyena", "Gives you the Hyena skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Hyena
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Claw", "Gives you the Claw skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Claw
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Chicky", "Gives you the Chicky skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Chicky
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Piggo", "Gives you the Piggo skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Piggo
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Shago", "Gives you the Shago skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Shago
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Shippers", "Gives you the Shippers skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins.Shippers
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+SkinsSection:NewButton("Chicky's Son", "Gives you the Chicky's Son skin", function()
+	local v1 = game:GetService("ReplicatedStorage").Skins["Chicky's Son"]
+	local event = game:GetService("ReplicatedStorage").Remotes.BoxUnlockEvent
+
+	event:FireServer(v1)
+	print("Clicked")
+end)
+
+local Tab = Window:NewTab("Extra")
+local ExtraSection = Tab:NewSection("Extra (includes revives and isn't made by me)")
+ExtraSection:NewButton("Extra Pet Story Gui", "Loads a Pet Story Gui that isn't made by me", function()
+	loadstring(game:HttpGet"https://thedragonslayer2.github.io")()
+	print("Clicked")
+end)
