@@ -3,11 +3,11 @@ local Window = Library.CreateLib("AirPlane4Gui | Made by red_Jeff", "GrapeTheme"
 
 local Tab = Window:NewTab("Player")
 local PlayerSection = Tab:NewSection("Player")
-PlayerSection:NewSlider("Walkspeed", "Changes your Walkspeed.", 250, 0, function(s)
+PlayerSection:NewSlider("Walkspeed", "Changes your Walkspeed.", 500, 16, function(s)
 	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
 
-PlayerSection:NewSlider("JumpPower", "Changes your JumpPower", 250, 16, function(s)
+PlayerSection:NewSlider("JumpPower", "Changes your JumpPower", 500, 50, function(s)
 	game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
 
@@ -96,7 +96,7 @@ TeleportationSection:NewButton("The Vents", "Teleports you to the vents", functi
 	print("Clicked")
 end)
 
-TeleportationSection:NewButton("End of The Vents", "Teleports you to the End of The Vents", function()
+TeleportationSection:NewButton("End of The Vents (Do not suggest using.)", "Teleports you to the End of The Vents", function()
 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1499.31103515625, 72.07764434814453, 470.945556640625)
 	print("Clicked")
 end)
