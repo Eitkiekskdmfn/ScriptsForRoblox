@@ -1,0 +1,112 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("AirPlane4Gui | Made by red_Jeff", "GrapeTheme")
+
+local Tab = Window:NewTab("Player")
+local PlayerSection = Tab:NewSection("Player")
+PlayerSection:NewSlider("Walkspeed", "Changes your Walkspeed.", 250, 0, function(s)
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+PlayerSection:NewSlider("JumpPower", "Changes your JumpPower", 250, 16, function(s)
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+PlayerSection:NewButton("MaxHealth", "Gives you MaxHealth", function()
+	--// Script: game:GetService("Players").LocalPlayer.Character.Burger.Animation
+	--// Function: function(#nil)
+
+	local v1 = 100
+	local event = game:GetService("ReplicatedStorage").Remotes.healPlayerEvent
+
+	event:FireServer(v1)
+	
+	print("Clicked")
+end)
+
+local Tab = Window:NewTab("Votes")
+local VotesSection = Tab:NewSection("Votes")
+VotesSection:NewButton("Vote for GeneralPoncho", "More Clicks = More numbers of Votes.", function()
+	--// Script: game:GetService("Players").LocalPlayer.PlayerGui.MainGui.pollFrame.selectOptionScript
+	--// Function: function(#nil)
+
+	local v1 = 1
+	local event = game:GetService("ReplicatedStorage").Remotes.selectOptionEvent
+
+	event:FireServer(v1)
+	
+	print("Clicked")
+end)
+
+VotesSection:NewButton("Vote for Ronald", "More Clicks = More numbers of Votes.", function()
+	--// Script: game:GetService("Players").LocalPlayer.PlayerGui.MainGui.pollFrame.selectOptionScript
+	--// Function: function(#nil)
+
+	local v1 = 2
+	local event = game:GetService("ReplicatedStorage").Remotes.selectOptionEvent
+
+	event:FireServer(v1)
+	
+	print("Clicked")
+end)
+
+local Tab = Window:NewTab("Teleportation")
+local TeleportationSection = Tab:NewSection("Teleportation")
+TeleportationSection:NewButton("Boys Bedroom", "Teleports you to the Boys Bedroom.", function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(53.85664367675781, 50.154361724853516, -69.22118377685547)
+	print("Clicked")
+end)
+
+TeleportationSection:NewButton("Girls Bedroom", "Teleports you to the Girls Bedroom.", function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(16.573898315429688, 50.154361724853516, -128.26466369628906)
+	print("Clicked")
+end)
+
+TeleportationSection:NewButton("Downstairs", "Teleports you to Downstairs.", function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5.358978748321533, 24.615785598754883, -76.11091613769531)
+	print("Clicked")
+end)
+
+TeleportationSection:NewButton("The Kitchen", "Teleports you to the Kitchen.", function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(40.33490753173828, 24.615787506103516, -94.82583618164062)
+	print("Clicked")
+end)
+
+TeleportationSection:NewButton("Backyard", "Teleports you to the Backyard.", function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(83.82020568847656, 23.736921310424805, -85.29524993896484)
+	print("Clicked")
+end)
+
+TeleportationSection:NewButton("SmallPlane Start", "Teleports you to the SmallPlane Garage.", function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(53.525211334228516, 23.68524169921875, 100.9088363647461)
+	print("Clicked")
+end)
+
+TeleportationSection:NewButton("SmallPlane End", "Teleports you to the end of the SmallPlane place.", function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1435.450439453125, 23.736921310424805, 99.6086654663086)
+	print("Clicked")
+end)
+
+TeleportationSection:NewButton("The Airport", "Teleports you to the Airport", function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1490.5814208984375, 24.137174606323242, 384.6121826171875)
+	print("Clicked")
+end)
+
+TeleportationSection:NewButton("The Vents", "Teleports you to the vents", function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1494.037109375, 39.13710403442383, 487.9457092285156)
+	print("Clicked")
+end)
+
+TeleportationSection:NewButton("End of The Vents", "Teleports you to the End of The Vents", function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1499.31103515625, 72.07764434814453, 470.945556640625)
+	print("Clicked")
+end)
+
+TeleportationSection:NewButton("Start of the Cave", "Teleports you to the start of the cave", function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1737.913330078125, 23.736923217773438, -4.070693016052246)
+	print("Clicked")
+end)
+
+TeleportationSection:NewButton("End of the Cave", "Teleports you to the end of the cave", function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1847.126220703125, 23.736923217773438, 10.001763343811035)
+	print("Clicked")
+end)
