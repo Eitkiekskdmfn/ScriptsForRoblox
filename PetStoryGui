@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Pet Story Gui v1.1 | Made by red_Jeff", "GrapeTheme")
+local Window = Library.CreateLib("Pet Story Gui v1.2 | Made by red_Jeff", "GrapeTheme")
 
 local Tab = Window:NewTab("Misc")
 local MiscSection = Tab:NewSection("Misc")
